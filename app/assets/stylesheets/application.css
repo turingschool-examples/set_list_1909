@@ -13,3 +13,21 @@
  *= require_tree .
  *= require_self
  */
+
+ header{
+   padding: 5px;
+   text-align: center;
+   background: tomato;
+   color: white;
+ }
+
+ .songs-grid{
+   display: grid;
+   background-color: green;
+   grid-template-columns: auto auto auto;
+ }
+
+ #song-info{
+   text-align: center;
+   background-color: tomato;
+ }
