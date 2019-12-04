@@ -15,8 +15,16 @@ class ArtistsController < ApplicationController
   end
 
   def create
-    Artist.create(artist_params)
-    redirect_to '/artists'
+    artist = Artist.new(artist_params)
+
+    if artist.save
+      flash[:success] = 'YOU DID THE THING'
+      redirect_to '/artists'
+    else
+      flash[:notice] = 'Artist not created: Required information missing.'
+      render :new
+    end
+
   end
 
   def update
@@ -33,9 +41,9 @@ class ArtistsController < ApplicationController
 
   private
 
-    def artist_params
-      params.permit(:name)
-    end
+  def artist_params
+    params.permit(:name)
+  end
 
 
 
