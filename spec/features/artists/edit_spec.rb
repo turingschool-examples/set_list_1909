@@ -2,11 +2,16 @@ require 'rails_helper'
 
 RSpec.describe 'Edit Artist' do
   describe 'as a visitor' do
+
     it 'can update an artist' do
       beatles = Artist.create(name: 'Beatles')
+      queen = Artist.create(name: 'Queen')
 
       visit '/artists'
-      click_link 'Edit'
+
+      within "#artist-#{beatles.id}" do
+        click_link 'Edit'
+      end
 
       expect(current_path).to eq("/artists/#{beatles.id}/edit")
 

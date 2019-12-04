@@ -1,0 +1,10 @@
+<% @playlists.each do |playlist| %>
+  <section id="playlist-<%= playlist.id %>">
+    <h1><%= playlist.name %></h1>
+    <% playlist.songs.each do |song| %>
+      <section id="song-<%= song.id %>">
+        <p><%= song.title %></p>
+      </section>
+    <% end %>
+  </section>
+<% end %>

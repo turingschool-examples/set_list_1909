@@ -9,6 +9,7 @@ RSpec.describe 'As a visitor' do
     click_button 'Delete'
 
     expect(current_path).to eq('/artists')
+    expect(page).to_not have_css("#artist-#{talking_heads.id}")
     expect(page).to_not have_content(talking_heads.name)
   end
 end

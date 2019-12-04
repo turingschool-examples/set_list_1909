@@ -3,6 +3,7 @@ require 'rails_helper'
 RSpec.describe 'New artist' do
   describe 'As a visitor' do
     describe 'when i visit the new artist form by clicking a link on the index' do
+
       it 'creates a new artist' do
         visit '/artists'
 
@@ -13,8 +14,11 @@ RSpec.describe 'New artist' do
         fill_in 'Name', with: 'Meg'
         click_on 'Create Artist'
 
+        new_artist = Artist.last
+
         expect(current_path).to eq('/artists')
-        expect(page).to have_content('Meg')
+        expect(new_artist.name).to eq("Meg")
+        expect(page).to have_css("#artist-#{new_artist.id}")
       end
     end
   end
