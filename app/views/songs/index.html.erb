@@ -1,10 +1,10 @@
 <h1>All Songs</h1>
-
 <section class = "songs-grid">
   <% @songs.each do |song| %>
     <section id = "song-<%= song.id %>">
       <h2><%= song.title %></h2>
       <p>Play Count: <%= song.play_count %></p>
+      <%= button_to "Add Song", "/cart/#{song.id}", method: :patch %>
     </section>
   <% end %>
 </section>
