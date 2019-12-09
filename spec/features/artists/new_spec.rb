@@ -20,6 +20,15 @@ RSpec.describe 'New artist' do
         expect(new_artist.name).to eq("Meg")
         expect(page).to have_css("#artist-#{new_artist.id}")
       end
+
+      it 'cannot create an artist without a name' do
+        visit '/artists/new'
+
+        click_on 'Create Artist'
+
+        expect(page).to have_content('Artist not created: Required information missing.')
+        expect(page).to have_button('Create Artist')
+      end
     end
   end
 end
