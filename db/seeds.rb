@@ -8,6 +8,8 @@
 carly_rae = Artist.create(name: "Carly Rae")
 britney = Artist.create(name: "Britney Spears")
 journey = Artist.create(name: "Journey")
+queen = Artist.create(name: "Queen")
+
 song_1 = carly_rae.songs.create(title:       "I Really Like You",
                      length:      208,
                      play_count:  243810867)
@@ -31,3 +33,17 @@ song_6 = Song.create(title:       "Wheel in the sky",
                      length:      199,
                      play_count:  1214722172,
                     artist_id: journey.id)
+
+party_at_mikes = Playlist.create(name: "Party @ Mike's")
+classics = Playlist.create(name: "Classics")
+guilty_pleasures = Playlist.create(name: "Guilty Pleasures")
+
+PlaylistSong.create(song: song_1, playlist: guilty_pleasures)
+PlaylistSong.create(song: song_1, playlist: party_at_mikes)
+PlaylistSong.create(song: song_2, playlist: party_at_mikes)
+PlaylistSong.create(song: song_2, playlist: guilty_pleasures)
+PlaylistSong.create(song: song_2, playlist: classics)
+PlaylistSong.create(song: song_3, playlist: party_at_mikes)
+PlaylistSong.create(song: song_4, playlist: classics)
+PlaylistSong.create(song: song_4, playlist: guilty_pleasures)
+PlaylistSong.create(song: song_5, playlist: classics)
