@@ -1,13 +1,3 @@
-<%= form_tag "/artists/#{@artist_id}/songs" do %>
-
-  <%= label_tag :title %>
-  <%= text_field_tag :title %>
-
-  <%= label_tag :length %>
-  <%= number_field_tag :length %>
-
-  <%= label_tag :play_count %>
-  <%= number_field_tag :play_count %>
-
-  <%= submit_tag "Create Song" %>
-<% end %>
+<%= render partial: 'form', locals: {path: "/artists/#{@artist_id}/songs",
+                                    method: :post,
+                                    button_text: 'Create Song'} %>
