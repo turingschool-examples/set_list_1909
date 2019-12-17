@@ -13,4 +13,11 @@ Rails.application.routes.draw do
   get '/playlists', to: 'playlists#index'
   patch '/cart/:song_id', to: 'cart#update'
 
+  get '/', to: 'welcome#index'
+  get '/users/new', to: 'users#new'
+  post '/users', to: 'users#create'
+  get '/profile', to: 'users#show'
+  get '/login', to: 'sessions#new'
+  post '/login', to: 'sessions#create'
+
 end
