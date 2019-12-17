@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2019-12-17T10:03:45-07:00">2019-12-17T10:03:45-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2019-12-17T11:14:09-07:00">2019-12-17T11:14:09-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.43
+         1.44
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>46</b> files in total.
-    <b>449</b> relevant lines. 
-    <span class="green"><b>448</b> lines covered</span> and
+    <b>48</b> files in total.
+    <b>459</b> relevant lines. 
+    <span class="green"><b>458</b> lines covered</span> and
     <span class="red"><b>1</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -51,13 +51,33 @@
     <tbody>
       
       <tr>
+        <td class="strong"><a href="#6bb9b6a257cbba2f494841b70b9bdfb2d2cf17d5" class="src_link" title="app/controllers/admin/base_controller.rb">app/controllers/admin/base_controller.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>8</td>
+        <td>4</td>
+        <td>4</td>
+        <td>0</td>
+        <td>1.3</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#16eefc018675775b28dc513ac8365389d8f5ba18" class="src_link" title="app/controllers/admin/dashboard_controller.rb">app/controllers/admin/dashboard_controller.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>5</td>
+        <td>2</td>
+        <td>2</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
         <td class="strong"><a href="#ff903692162cbc4c15c955072cfc5e9692be0c1d" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>12</td>
-        <td>7</td>
-        <td>7</td>
+        <td>16</td>
+        <td>9</td>
+        <td>9</td>
         <td>0</td>
-        <td>7.7</td>
+        <td>6.6</td>
       </tr>
       
       <tr>
@@ -167,7 +187,7 @@
         <td>10</td>
         <td>10</td>
         <td>0</td>
-        <td>9.9</td>
+        <td>10.3</td>
       </tr>
       
       <tr>
@@ -333,9 +353,9 @@
       <tr>
         <td class="strong"><a href="#5cbe87e512d1884c15a09f2fd7efd0c6533a457c" class="src_link" title="config/routes.rb">config/routes.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>24</td>
-        <td>19</td>
-        <td>19</td>
+        <td>27</td>
+        <td>21</td>
+        <td>21</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -526,13 +546,129 @@
     
       <div class="source_files">
       
+        <div class="source_table" id="6bb9b6a257cbba2f494841b70b9bdfb2d2cf17d5">
+  <div class="header">
+    <h3>app/controllers/admin/base_controller.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>4</b> relevant lines. 
+      <span class="green"><b>4</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class Admin::BaseController &lt; ApplicationController</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  before_action :require_admin</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def require_admin</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="5">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    render file: &quot;public/404&quot; unless current_admin?</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="16eefc018675775b28dc513ac8365389d8f5ba18">
+  <div class="header">
+    <h3>app/controllers/admin/dashboard_controller.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>2</b> relevant lines. 
+      <span class="green"><b>2</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class Admin::DashboardController &lt; Admin::BaseController</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def index</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
         <div class="source_table" id="ff903692162cbc4c15c955072cfc5e9692be0c1d">
   <div class="header">
     <h3>app/controllers/application_controller.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>7</b> relevant lines. 
-      <span class="green"><b>7</b> lines covered</span> and
+      <b>9</b> relevant lines. 
+      <span class="green"><b>9</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -555,7 +691,7 @@
         <li class="covered" data-hits="1" data-linenumber="3">
           <span class="hits">1</span>
           
-          <code class="ruby">  helper_method :cart, :current_user</code>
+          <code class="ruby">  helper_method :cart, :current_user, :current_admin?</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="4">
@@ -570,8 +706,8 @@
           <code class="ruby">  def cart</code>
         </li>
       
-        <li class="covered" data-hits="42" data-linenumber="6">
-          <span class="hits">42</span>
+        <li class="covered" data-hits="44" data-linenumber="6">
+          <span class="hits">44</span>
           
           <code class="ruby">    @cart ||= Cart.new(session[:cart])</code>
         </li>
@@ -607,6 +743,30 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def current_admin?</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="14">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    current_user &amp;&amp; current_user.admin?</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
           
           
           <code class="ruby">end</code>
@@ -1751,8 +1911,8 @@
           <code class="ruby">  def initialize(initial_contents)</code>
         </li>
       
-        <li class="covered" data-hits="44" data-linenumber="5">
-          <span class="hits">44</span>
+        <li class="covered" data-hits="46" data-linenumber="5">
+          <span class="hits">46</span>
           
           <code class="ruby">    @contents = initial_contents || Hash.new(0)</code>
         </li>
@@ -1775,8 +1935,8 @@
           <code class="ruby">  def total_count</code>
         </li>
       
-        <li class="covered" data-hits="34" data-linenumber="9">
-          <span class="hits">34</span>
+        <li class="covered" data-hits="36" data-linenumber="9">
+          <span class="hits">36</span>
           
           <code class="ruby">    @contents.values.sum</code>
         </li>
@@ -3241,8 +3401,8 @@
     <h3>config/routes.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>19</b> relevant lines. 
-      <span class="green"><b>19</b> lines covered</span> and
+      <b>21</b> relevant lines. 
+      <span class="green"><b>21</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -3277,31 +3437,31 @@
         <li class="covered" data-hits="1" data-linenumber="5">
           <span class="hits">1</span>
           
-          <code class="ruby">    get &#39;/artists/new&#39;, to: &#39;artists#new&#39;</code>
+          <code class="ruby">  get &#39;/artists/new&#39;, to: &#39;artists#new&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
-          <code class="ruby">    post &#39;/artists&#39;, to: &#39;artists#create&#39;</code>
+          <code class="ruby">  post &#39;/artists&#39;, to: &#39;artists#create&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="7">
           <span class="hits">1</span>
           
-          <code class="ruby">    delete &#39;/artists/:id&#39;, to: &#39;artists#destroy&#39;</code>
+          <code class="ruby">  delete &#39;/artists/:id&#39;, to: &#39;artists#destroy&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="8">
           <span class="hits">1</span>
           
-          <code class="ruby">    get &#39;/artists/:id/edit&#39;, to: &#39;artists#edit&#39;</code>
+          <code class="ruby">  get &#39;/artists/:id/edit&#39;, to: &#39;artists#edit&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="9">
           <span class="hits">1</span>
           
-          <code class="ruby">    patch &#39;/artists/:id&#39;, to: &#39;artists#update&#39;</code>
+          <code class="ruby">  patch &#39;/artists/:id&#39;, to: &#39;artists#update&#39;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="10">
@@ -3388,7 +3548,25 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="24">
+        <li class="covered" data-hits="1" data-linenumber="24">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  namespace :admin do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="25">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    get &#39;/dashboard&#39;, to: &#39;dashboard#index&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
           
           
           <code class="ruby">end</code>

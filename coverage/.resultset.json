@@ -202,6 +202,9 @@
         1,
         1,
         null,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/meghanstang/turing-staff/2module/lesson_repos/set_list_1909/app/helpers/application_helper.rb": [
@@ -673,11 +676,11 @@
         1,
         null,
         1,
-        44,
+        46,
         null,
         null,
         1,
-        34,
+        36,
         null,
         null,
         1,
@@ -812,6 +815,41 @@
         1,
         null
       ],
+      "/Users/meghanstang/turing-staff/2module/lesson_repos/set_list_1909/app/controllers/application_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        44,
+        null,
+        null,
+        1,
+        7,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null
+      ],
+      "/Users/meghanstang/turing-staff/2module/lesson_repos/set_list_1909/app/controllers/admin/dashboard_controller.rb": [
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/meghanstang/turing-staff/2module/lesson_repos/set_list_1909/app/controllers/admin/base_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        2,
+        null,
+        null,
+        null
+      ],
       "/Users/meghanstang/turing-staff/2module/lesson_repos/set_list_1909/app/controllers/artists_controller.rb": [
         1,
         1,
@@ -864,20 +902,6 @@
         null,
         null,
         null,
-        null,
-        null
-      ],
-      "/Users/meghanstang/turing-staff/2module/lesson_repos/set_list_1909/app/controllers/application_controller.rb": [
-        1,
-        1,
-        1,
-        null,
-        1,
-        42,
-        null,
-        null,
-        1,
-        7,
         null,
         null
       ],
@@ -979,6 +1003,6 @@
         null
       ]
     },
-    "timestamp": 1576602225
+    "timestamp": 1576606449
   }
 }
